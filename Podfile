@@ -10,6 +10,6 @@ target 'Versi' do
   pod 'RxCocoa'
   pod 'Alamofire'
   pod 'AlamofireImage'  
-
+  pod 'SwiftyJSON'
 
 end

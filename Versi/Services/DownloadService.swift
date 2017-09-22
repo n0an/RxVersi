@@ -8,22 +8,37 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class DownloadService {
     static let instance = DownloadService()
     
-    func downloadTrendingReposDictArray(completion: @escaping (_ reposDictArray: [String: Any])->()) {
+    func downloadTrendingReposDictArray(completion: @escaping (_ reposDictArray: [JSON]) -> ()) {
+        
+        var trendingReposArray = [JSON]()
         
         Alamofire.request(trendingRepoUrl).responseJSON { (response) in
             
+            guard let jsonResponse = response.result.value as? [String: Any] else { return }
             
+            let json = JSON(jsonResponse)
+            
+            let repoDictArr = json["items"].arrayValue
+            
+            for repoDict in repoDictArr {
+                if trendingReposArray.count <= 10 {
+                    trendingReposArray.append(repoDict)
+                } else {
+                    break
+                }
+            }
+            
+            completion(trendingReposArray)
             
             
         }
         
     }
-    
-    
     
 }
 
