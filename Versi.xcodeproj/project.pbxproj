@@ -21,6 +21,7 @@
 		15E2FC771F756DE700F8254F /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC761F756DE700F8254F /* UIButtonExt.swift */; };
 		15E2FC7A1F756E2400F8254F /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC791F756E2400F8254F /* DateExt.swift */; };
 		15E2FC7C1F756E4200F8254F /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC7B1F756E4200F8254F /* UIViewControllerExt.swift */; };
+		15FAF7BF1F75730800CDDEF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAF7BE1F75730800CDDEF6 /* Constants.swift */; };
 		FB82B8B89CE2CE01B1421BED /* Pods_Versi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CC838D9B438BEA762525F5 /* Pods_Versi.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		15E2FC761F756DE700F8254F /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		15E2FC791F756E2400F8254F /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		15E2FC7B1F756E4200F8254F /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		15FAF7BE1F75730800CDDEF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		31E651569F752B5245CB1870 /* Pods-Versi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.release.xcconfig"; sourceTree = "<group>"; };
 		93CC838D9B438BEA762525F5 /* Pods_Versi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Versi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0E134A79F6EAE683280B0 /* Pods-Versi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				1559A7E01F75629A00E92D91 /* Controller */,
 				15E2FC781F756DF400F8254F /* Extensions */,
 				1559A7CC1F75625400E92D91 /* AppDelegate.swift */,
+				15FAF7BE1F75730800CDDEF6 /* Constants.swift */,
 				1559A7D01F75625400E92D91 /* Main.storyboard */,
 				1559A7D31F75625400E92D91 /* Assets.xcassets */,
 				1559A7D51F75625400E92D91 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 				1559A7CD1F75625400E92D91 /* AppDelegate.swift in Sources */,
 				15E2FC711F75680900F8254F /* TrendingFeedCell.swift in Sources */,
 				15E2FC6D1F75678400F8254F /* RoundedBorderButton.swift in Sources */,
+				15FAF7BF1F75730800CDDEF6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
