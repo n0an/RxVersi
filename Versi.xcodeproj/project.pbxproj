@@ -17,6 +17,7 @@
 		15E2FC6F1F7567C600F8254F /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC6E1F7567C600F8254F /* RoundedBorderTextField.swift */; };
 		15E2FC711F75680900F8254F /* TrendingFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC701F75680900F8254F /* TrendingFeedCell.swift */; };
 		15E2FC731F75683200F8254F /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC721F75683200F8254F /* SearchCell.swift */; };
+		15E2FC751F756AA700F8254F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC741F756AA600F8254F /* Repo.swift */; };
 		FB82B8B89CE2CE01B1421BED /* Pods_Versi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CC838D9B438BEA762525F5 /* Pods_Versi.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		15E2FC6E1F7567C600F8254F /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 		15E2FC701F75680900F8254F /* TrendingFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedCell.swift; sourceTree = "<group>"; };
 		15E2FC721F75683200F8254F /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		15E2FC741F756AA600F8254F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		31E651569F752B5245CB1870 /* Pods-Versi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.release.xcconfig"; sourceTree = "<group>"; };
 		93CC838D9B438BEA762525F5 /* Pods_Versi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Versi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0E134A79F6EAE683280B0 /* Pods-Versi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		1559A7DE1F75629000E92D91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15E2FC741F756AA600F8254F /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				15E2FC6B1F7564CD00F8254F /* SearchVC.swift in Sources */,
 				15E2FC6F1F7567C600F8254F /* RoundedBorderTextField.swift in Sources */,
 				1559A7CF1F75625400E92D91 /* TrendingFeedVC.swift in Sources */,
+				15E2FC751F756AA700F8254F /* Repo.swift in Sources */,
 				15E2FC731F75683200F8254F /* SearchCell.swift in Sources */,
 				1559A7CD1F75625400E92D91 /* AppDelegate.swift in Sources */,
 				15E2FC711F75680900F8254F /* TrendingFeedCell.swift in Sources */,
