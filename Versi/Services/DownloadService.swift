@@ -39,7 +39,8 @@ class DownloadService {
             var reposArray = [Repo]()
             
             for dict in trendingReposDictArray {
-                
+                // !!!IMPORTANT!!!
+                // How to parse in depth JSON, asynchronously reposArray filling in this scope, when filled - give filled array to completion
                 self.parseRepo(fromDictionary: dict, completion: { (repo) in
                     if reposArray.count < 9 {
                         reposArray.append(repo)
