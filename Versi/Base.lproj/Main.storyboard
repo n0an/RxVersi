@@ -354,8 +354,8 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="backView" destination="pmc-yl-gmx" id="RSv-vS-QN8"/>
+                                            <outlet property="forksCountLbl" destination="i62-8p-bda" id="57k-GH-x2c"/>
                                             <outlet property="repoDescLbl" destination="X5a-16-o7H" id="02J-CM-I7I"/>
-                                            <outlet property="repoDownloadsLbl" destination="i62-8p-bda" id="ycN-hP-Zrt"/>
                                             <outlet property="repoImageView" destination="Nf3-C0-XdB" id="eUX-JK-JrE"/>
                                             <outlet property="repoLanguageLbl" destination="T1p-G7-2dv" id="nH6-mG-O6D"/>
                                             <outlet property="repoNameLbl" destination="Jrd-WR-ehx" id="eP2-5a-zaV"/>

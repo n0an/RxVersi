@@ -13,10 +13,32 @@ class SearchCell: UITableViewCell {
     @IBOutlet weak var repoImageView: UIImageView!
     @IBOutlet weak var repoNameLbl: UILabel!
     @IBOutlet weak var repoDescLbl: UILabel!
-    @IBOutlet weak var repoDownloadsLbl: UILabel!
+    @IBOutlet weak var forksCountLbl: UILabel!
     @IBOutlet weak var repoLanguageLbl: UILabel!
     @IBOutlet weak var backView: UIView!
-
     
+    private var repoUrl: String?
+
+    func configureCell(repo: Repo) {
+        repoImageView.image = repo.image
+        repoNameLbl.text = repo.name
+        repoDescLbl.text = repo.description
+        forksCountLbl.text = String(repo.numberOfForks)
+        repoLanguageLbl.text = repo.language
+        
+        repoUrl = repo.repoUrl
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        backView.layer.cornerRadius = 15
+    }
 
 }
+
+
+
+
+
+
