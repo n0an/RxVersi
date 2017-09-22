@@ -16,6 +16,7 @@ let darkPurple: UIColor = #colorLiteral(red: 0.2980392157, green: 0.3137254902, 
 // MARK – URLs
 let trendingRepoUrl = "https://api.github.com/search/repositories?q=Swift&sort=stars&order=desc"
 let searchUrl = "https://api.github.com/search/repositories?q="
+let starDescendingSegment = "&sort=stars&order=desc"
 let readmeSegment = "/blob/master/README.md"
 
 // MARK – Notifications
