@@ -18,6 +18,9 @@
 		15E2FC711F75680900F8254F /* TrendingFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC701F75680900F8254F /* TrendingFeedCell.swift */; };
 		15E2FC731F75683200F8254F /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC721F75683200F8254F /* SearchCell.swift */; };
 		15E2FC751F756AA700F8254F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC741F756AA600F8254F /* Repo.swift */; };
+		15E2FC771F756DE700F8254F /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC761F756DE700F8254F /* UIButtonExt.swift */; };
+		15E2FC7A1F756E2400F8254F /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC791F756E2400F8254F /* DateExt.swift */; };
+		15E2FC7C1F756E4200F8254F /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2FC7B1F756E4200F8254F /* UIViewControllerExt.swift */; };
 		FB82B8B89CE2CE01B1421BED /* Pods_Versi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CC838D9B438BEA762525F5 /* Pods_Versi.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		15E2FC701F75680900F8254F /* TrendingFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedCell.swift; sourceTree = "<group>"; };
 		15E2FC721F75683200F8254F /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		15E2FC741F756AA600F8254F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		15E2FC761F756DE700F8254F /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		15E2FC791F756E2400F8254F /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		15E2FC7B1F756E4200F8254F /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		31E651569F752B5245CB1870 /* Pods-Versi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.release.xcconfig"; sourceTree = "<group>"; };
 		93CC838D9B438BEA762525F5 /* Pods_Versi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Versi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0E134A79F6EAE683280B0 /* Pods-Versi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versi/Pods-Versi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 				1559A7DE1F75629000E92D91 /* Model */,
 				1559A7DF1F75629600E92D91 /* View */,
 				1559A7E01F75629A00E92D91 /* Controller */,
+				15E2FC781F756DF400F8254F /* Extensions */,
 				1559A7CC1F75625400E92D91 /* AppDelegate.swift */,
 				1559A7D01F75625400E92D91 /* Main.storyboard */,
 				1559A7D31F75625400E92D91 /* Assets.xcassets */,
@@ -111,6 +118,16 @@
 				15E2FC6A1F7564CC00F8254F /* SearchVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		15E2FC781F756DF400F8254F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15E2FC761F756DE700F8254F /* UIButtonExt.swift */,
+				15E2FC791F756E2400F8254F /* DateExt.swift */,
+				15E2FC7B1F756E4200F8254F /* UIViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5412B1B79A8AD1DF1A65B1F2 /* Pods */ = {
@@ -267,9 +284,12 @@
 			files = (
 				15E2FC6B1F7564CD00F8254F /* SearchVC.swift in Sources */,
 				15E2FC6F1F7567C600F8254F /* RoundedBorderTextField.swift in Sources */,
+				15E2FC771F756DE700F8254F /* UIButtonExt.swift in Sources */,
 				1559A7CF1F75625400E92D91 /* TrendingFeedVC.swift in Sources */,
 				15E2FC751F756AA700F8254F /* Repo.swift in Sources */,
+				15E2FC7A1F756E2400F8254F /* DateExt.swift in Sources */,
 				15E2FC731F75683200F8254F /* SearchCell.swift in Sources */,
+				15E2FC7C1F756E4200F8254F /* UIViewControllerExt.swift in Sources */,
 				1559A7CD1F75625400E92D91 /* AppDelegate.swift in Sources */,
 				15E2FC711F75680900F8254F /* TrendingFeedCell.swift in Sources */,
 				15E2FC6D1F75678400F8254F /* RoundedBorderButton.swift in Sources */,

@@ -178,10 +178,11 @@
                                             <outlet property="backView" destination="Af3-Lg-Isy" id="ANT-TB-sxi"/>
                                             <outlet property="contributorsLbl" destination="EI7-Ly-8Eh" id="7HD-ZV-8ye"/>
                                             <outlet property="languageLbl" destination="OsF-WG-dV0" id="Ii0-RG-wQe"/>
-                                            <outlet property="numberOfDownloadsLbl" destination="A8E-Ew-wLE" id="4kV-bZ-cuQ"/>
+                                            <outlet property="numberOfForksLbl" destination="A8E-Ew-wLE" id="prI-lh-AH1"/>
                                             <outlet property="repoDescLbl" destination="ql6-2D-ugg" id="mHS-Wc-bzA"/>
                                             <outlet property="repoImageView" destination="UXo-07-Ay4" id="wCg-kg-4Ky"/>
                                             <outlet property="repoNameLbl" destination="f40-B1-AW0" id="EJI-MH-RSC"/>
+                                            <outlet property="viewReadmeBtn" destination="Y4U-Ae-yf6" id="xSo-cB-NFg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
