@@ -18,6 +18,9 @@ class TrendingFeedVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        DownloadService.instance.downloadTrendingRepos { (repos) in
+            print("repos = ", repos)
+        }
     }
 
 }
