@@ -8,12 +8,13 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 import SwiftyJSON
 
 class DownloadService {
     static let instance = DownloadService()
     
-    func downloadTrendingReposDictArray(completion: @escaping (_ reposDictArray: [JSON]) -> ()) {
+    private func downloadTrendingReposDictArray(completion: @escaping (_ reposDictArray: [JSON]) -> ()) {
         
         var trendingReposArray = [JSON]()
         
@@ -38,28 +39,66 @@ class DownloadService {
             var reposArray = [Repo]()
             
             for dict in trendingReposDictArray {
-                let repo = self.parseTrendingRepo(fromDictionary: dict)
-                reposArray.append(repo)
+                
+                self.parseRepo(fromDictionary: dict, completion: { (repo) in
+                    if reposArray.count < 9 {
+                        reposArray.append(repo)
+                    } else {
+                        let sortedArray = reposArray.sorted(by: { (repoA, repoB) -> Bool in
+                            return repoA.numberOfForks > repoB.numberOfForks
+                        })
+                        completion(sortedArray)
+                    }
+                })
             }
-            
-            completion(reposArray)
         }
     }
     
-    func parseTrendingRepo(fromDictionary dict: JSON) -> Repo {
+    func parseRepo(fromDictionary dict: JSON, completion: @escaping (_ repo: Repo)->()) {
         
-        let avatarUrlString      = dict["avatar_url"].stringValue
+        let avatarUrlString      = dict["owner"]["avatar_url"].stringValue
         let name                 = dict["name"].stringValue
         let description          = dict["description"].stringValue
         let numberOfForks        = dict["forks_count"].intValue
         let language             = dict["language"].stringValue
-        let numberOfContributors = 100 // dummy
+        let contributorsUrl      = dict["contributors_url"].stringValue
         let repoUrl              = dict["html_url"].stringValue
         
-        let repo = Repo(image: #imageLiteral(resourceName: "searchIconLarge"), name: name, description: description, numberOfForks: numberOfForks, language: language, numberOfContributors: numberOfContributors, repoUrl: repoUrl)
+        downloadImageFor(avatarUrl: avatarUrlString) { (returnedImage) in
+            self.downloadContributorsDataFor(contributorsUrl: contributorsUrl, completion: { (contributorsCount) in
+                
+                let repo = Repo(image: returnedImage, name: name, description: description, numberOfForks: numberOfForks, language: language, numberOfContributors: contributorsCount, repoUrl: repoUrl)
+                
+                completion(repo)
+            })
+        }
         
-        return repo
     }
+    
+    
+    func downloadImageFor(avatarUrl: String, completion: @escaping (_ image: UIImage)->()) {
+        Alamofire.request(avatarUrl).responseImage { (imageResponse) in
+            guard let image = imageResponse.result.value else { return }
+            completion(image)
+        }
+    }
+    
+    func downloadContributorsDataFor(contributorsUrl: String, completion: @escaping (_ contributors: Int)->()) {
+        
+        Alamofire.request(contributorsUrl).responseJSON { (response) in
+            
+            guard let responseValue = response.result.value else { return }
+            
+            let json = JSON(responseValue)
+        
+            if !json.isEmpty {
+                completion(json.count)
+            }
+            
+        }
+        
+    }
+    
     
 }
 
