@@ -17,7 +17,7 @@ class SearchCell: UITableViewCell {
     @IBOutlet weak var repoLanguageLbl: UILabel!
     @IBOutlet weak var backView: UIView!
     
-    private var repoUrl: String?
+    public private(set) var repoUrl: String?
 
     func configureCell(repo: Repo) {
         repoImageView.image = repo.image
