@@ -80,6 +80,9 @@ class SearchVC: UIViewController, UITableViewDelegate, UITextFieldDelegate {
             return
         }
         
+        let url = cell.repoUrl!
+        self.presentSafariWebViewFor(url: url)
+        
         print(cell.repoUrl)
         
     }
